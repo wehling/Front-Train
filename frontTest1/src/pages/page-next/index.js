@@ -2,7 +2,7 @@ import Header from '@/components/test/vue-test/header';
 import Footer from '@/components/test/vue-test/footer';
 
 export default {
-    name: 'test',
+    name: 'next',
     data() {
         return {
             header_show:true,

@@ -5,6 +5,7 @@ import pageB from '@/pages/page-b/index.vue';
 import pageUnit from '@/pages/page-unit/index.vue';
 // 测试自定义组件引用
 import pageVueTest from '@/pages/page-test/index.vue';
+import pageNext from '@/pages/page-next/index.vue';
 // 测试界面
 const pageTest = {template: '<h1>测试页面</h1>'};
 // 使用路由
@@ -37,9 +38,14 @@ export default new Router({
             component: pageTest
         },
         {
-          path: '/vuetest',
-          name: 'vueTest',
-          component: pageVueTest
+            path: '/vuetest',
+            name: 'vueTest',
+            component: pageVueTest
+        },
+        {
+            path: '/next',
+            name: 'vueNext',
+            component: pageNext
         }
     ]
 });

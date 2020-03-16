@@ -1,0 +1,7 @@
+**/.idea/
+**/target/
+**/logs/
+**/*.iml
+**/node_modules/
+**/package-lock.json
+**/dist/
