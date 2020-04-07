@@ -20,7 +20,7 @@
     top: 0;
     width: 100%;
     height: 100px;
-    background: red;
+    /*background: red;*/
 }
 .fd-title {
     width: 100%;
@@ -131,7 +131,7 @@
 }
 .fd-notic-text {
     position: absolute;
-    left: 75px;
+    left: 95px;
     line-height: 25px;
     font-size: 13px;
     color: #82878c;
