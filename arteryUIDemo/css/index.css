@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fd-main {
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+/*头部*/
+.fd-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: red;
+}
+.fd-header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: blue;
+}
+.fd-tab {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    /*height: 65px;*/
+    background: pink;
+}
+
+
+/*主要内容*/
+.fd-main-content {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background: aqua;
+}
+/*面包屑相关div*/
+.fd-bar {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background: yellow;
+}
+.fd-nav {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    background: peru;
+}
+.fd-nav-text {
+    width: 100%;
+    height: 25px;
+    background: blueviolet;
+}
+.fd-title {
+    width: 100%;
+    height: 40px;
+    background: black;
+}
+.fd-search {
+    width: 100%;
+    height: 65px;
+    background: brown;
+}
+
+
+.fd-content {
+    width: 100%;
+    height: 83.5%;
+    background: green;
+}
+.fd-details {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    /*height: 50px;*/
+    background: palegoldenrod;
+}
+.fd-content1 {
+    margin-top: 20px;
+    width: 100%;
+    height: 97%;
+    background: aquamarine;
+}
+/*.fd-table {*/
+/*    margin-top: 20px;*/
+/*    width: 100%;*/
+/*    height: 96%;*/
+/*    background: aquamarine;*/
+/*}*/
+
+/*底部*/
+.fd-bottom {
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+.fd-ps {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    /*height: 50px;*/
+    background: yellowgreen;
+}
+
+
+
