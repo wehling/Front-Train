@@ -1,16 +1,17 @@
-new Vue({
-    el:'#app',
-    data: function() {
+export default {
+    name: 'index',
+    data() {
         return {
-            rs1: [{
-                date: '2016-05-02',
-                name: '郭靖',
-                address: '上海市普陀区金沙江路 1518 弄'
+            breadcrumbData:[{
+                name: '首页',
+                href: 'https://www.baidu.com/'
             }, {
-                date: '2016-05-04',
-                name: '郭靖',
-                address: '上海市普陀区金沙江路 1517 弄'
+                name: '会员',
+                href: '请观察地址栏'
+            }, {
+                name: '订单',
+                href: 'button'
             }]
-        }
+        };
     }
-})
+};

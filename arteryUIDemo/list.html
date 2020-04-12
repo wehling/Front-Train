@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/list.css" type="text/css" />
 </head>
-<body data-js="js/list.js">
-<div class="fd-main" id="app">
+<body>
+<div class="fd-main">
     <!-- 头：页签等 开始-->
     <div class="fd-top">
         <div class="fd-header">
@@ -21,7 +21,9 @@
         <!--包含面包屑，搜索框 开始-->
         <div class="fd-bar">
             <div class="fd-nav">
-                <div class="fd-nav-text"></div>
+                <div class="fd-nav-text">
+                    <aty-breadcrumb :data="crumbData"></aty-breadcrumb>
+                </div>
                 <div class="fd-title"></div>
                 <div class="fd-search"></div>
             </div>
@@ -32,10 +34,24 @@
             <div class="fd-details">
                 <div class="fd-content1">
                     <div class="fd-content-list">
-                        <aty-table class="fd-basic-table" border :pageable-data="rs1">
-                            <aty-table-column prop="name" label="姓名"></aty-table-column>
-                            <aty-table-column prop="address" label="地址"></aty-table-column>
-                        </aty-table>
+<!--                        <div id="app">-->
+                            <aty-table class="fd-default-table" border :pageable-data="rs1">
+                                <aty-table-column type="index" :index="index" label="序号"></aty-table-column>
+                                <aty-table-column prop="bt" label="标题"></aty-table-column>
+                                <aty-table-column prop="ly" label="来源"></aty-table-column>
+                                <aty-table-column prop="rq" label="日期"></aty-table-column>
+                                <aty-table-column prop="jg" label="价格"></aty-table-column>
+                                <aty-table-column prop="ys" label="加载用时"></aty-table-column>
+                                <aty-table-column prop="dz" label="地址"></aty-table-column>
+                                <aty-table-column prop="zt" label="状态"></aty-table-column>
+                                <aty-table-column prop="cz" label="操作">
+                                    <template slot-scope="props">
+                                        <aty-link text="审核"></aty-link>
+                                        <aty-link text="查看"></aty-link>
+                                    </template>
+                                </aty-table-column>
+                            </aty-table>
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -50,24 +66,26 @@
     <!-- 底部 结束   -->
 </div>
 </body>
-<script type="text/javascript" th:src="@{js/artery-ui.min.js}"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/artery-ui.min.js"></script>
+<script type="text/javascript" src="js/list.js"></script>
 <script >
-    new Vue({
-        el:'#app',
-        data: function() {
+    export default {
+        name: 'index',
+        data() {
             return {
-                rs1: [{
-                    date: '2016-05-02',
-                    name: '郭靖',
-                    address: '上海市普陀区金沙江路 1576 弄'
+                crumbData:[{
+                    name: '首页',
+                    href: 'https://www.baidu.com/'
                 }, {
-                    date: '2016-05-04',
-                    name: '郭靖',
-                    address: '上海市普陀区金沙江路 1517 弄'
+                    name: '会员',
+                    href: '请观察地址栏'
+                }, {
+                    name: '订单',
+                    href: 'button'
                 }]
-            }
+            };
         }
-    })
-
+    };
 </script>
 </html>
