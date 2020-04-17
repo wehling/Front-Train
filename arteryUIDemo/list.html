@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>ArteryUI-列表</title>
+<!--    <link rel="stylesheet" href="css/reset.css">-->
     <link rel="stylesheet" href="css/artery-ui.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/list.css" type="text/css" />
 </head>
 <body>
-<div class="fd-main">
+<div class="fd-main" id="list">
     <!-- 头：页签等 开始-->
     <div class="fd-top">
         <div class="fd-header">
@@ -22,7 +23,6 @@
         <div class="fd-bar">
             <div class="fd-nav">
                 <div class="fd-nav-text">
-                    <aty-breadcrumb :data="crumbData"></aty-breadcrumb>
                 </div>
                 <div class="fd-title"></div>
                 <div class="fd-search"></div>
@@ -34,9 +34,19 @@
             <div class="fd-details">
                 <div class="fd-content1">
                     <div class="fd-content-list">
-<!--                        <div id="app">-->
-                            <aty-table class="fd-default-table" border :pageable-data="rs1">
-                                <aty-table-column type="index" :index="index" label="序号"></aty-table-column>
+                        <div class="fd-button">
+                            <aty-button icon="android-add-circle" class="fd-list-button" type="primary" text="默认">
+                            </aty-button>
+                            <aty-button icon="android-add-circle" type="primary" class="fd-list-button" text="悬浮" ></aty-button>
+                            <aty-button icon="android-add-circle" disabled class="fd-list-button" text="无效">
+                            </aty-button>
+<!--                            <aty-input class="input">-->
+<!--                                <aty-icon slot="append" type="ios-search"></aty-icon>-->
+<!--                            </aty-input>-->
+                        </div>
+                        <div class="fd-table">
+                            <aty-table :pageable-data="rs1" empty-text="未查询到数据">
+                                <aty-table-column type="selection" reserve-selection label="序号"></aty-table-column>
                                 <aty-table-column prop="bt" label="标题"></aty-table-column>
                                 <aty-table-column prop="ly" label="来源"></aty-table-column>
                                 <aty-table-column prop="rq" label="日期"></aty-table-column>
@@ -51,6 +61,10 @@
                                     </template>
                                 </aty-table-column>
                             </aty-table>
+                            <aty-pagination class="fd-page" :total="10" show-total show-elevator></aty-pagination>
+
+                        </div>
+                        <!--                        <div class="fd-page">-->
 <!--                        </div>-->
                     </div>
                 </div>
@@ -65,27 +79,8 @@
     </div>
     <!-- 底部 结束   -->
 </div>
-</body>
 <script type="text/javascript" src="js/vue.js"></script>
 <script type="text/javascript" src="js/artery-ui.min.js"></script>
 <script type="text/javascript" src="js/list.js"></script>
-<script >
-    export default {
-        name: 'index',
-        data() {
-            return {
-                crumbData:[{
-                    name: '首页',
-                    href: 'https://www.baidu.com/'
-                }, {
-                    name: '会员',
-                    href: '请观察地址栏'
-                }, {
-                    name: '订单',
-                    href: 'button'
-                }]
-            };
-        }
-    };
-</script>
+</body>
 </html>

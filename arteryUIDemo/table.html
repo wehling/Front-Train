@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/table.css" type="text/css" />
 </head>
 <body>
-<div class="fd-main">
+<div class="fd-main" id="table">
     <!-- 头：页签等 开始-->
     <div class="fd-top">
         <div class="fd-header">
@@ -32,7 +32,33 @@
             <div class="fd-details">
                 <div class="fd-content1">
                     <div class="fd-content-table">
-
+                        <aty-row class="fd-content-row">
+                            <aty-col class="fd-content-col">
+                                <aty-input label="案件编号" placeholder="20199001"></aty-input>
+                                <aty-input label="行政执法主体名称" placeholder="西宁市药监局"></aty-input>
+                                <aty-select label="案件程序类型" placeholder="一般程序"></aty-select>
+                                <aty-textarea  label="文本域默认" placeholder="125415"></aty-textarea>
+                                <aty-input label="检查案件编号" placeholder="西宁市药监局"></aty-input>
+                                <div class="fd-content-div">
+                                    <span class="fd-content-date">期间日期</span>
+                                    <aty-date-picker :value="new Date()"
+                                                     format="yyyy年MM月dd日" type="date" placeholder="选择日期" ></aty-date-picker>
+                                    至
+                                    <aty-date-picker :value="new Date()"
+                                                     format="yyyy年MM月dd日" type="date" placeholder="选择日期" ></aty-date-picker>
+                                </div>
+                                <aty-textarea label="文本域默认" placeholder="125415"></aty-textarea>
+                                <aty-radio-group :label-width="110" label="重大案件">
+                                    <aty-radio radio-label="是"></aty-radio>
+                                    <aty-radio radio-label="否"></aty-radio>
+                                </aty-radio-group>
+                                <aty-form-item>
+                                    <aty-button class="fd-form-button" type="primary" text="提交"></aty-button>
+                                    <aty-button class="fd-form-button" text="保存"></aty-button>
+                                </aty-form-item>
+                                </aty-form>
+                            </aty-col>
+                        </aty-row>
                     </div>
                 </div>
             </div>
@@ -46,6 +72,8 @@
     </div>
     <!-- 底部 结束   -->
 </div>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/artery-ui.min.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
 </body>
-<script type="text/javascript" th:src="@{js/artery-ui.min.js}"></script>
 </html>
