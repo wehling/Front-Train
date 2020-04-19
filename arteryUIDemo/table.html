@@ -11,8 +11,24 @@
 <div class="fd-main" id="table">
     <!-- 头：页签等 开始-->
     <div class="fd-top">
-        <div class="fd-header">
-            <div class="fd-tab">33</div>
+        <div class="fd-tab">
+            <div class="fd-logo">
+                <span class="fd-logo-img"></span>
+                <span class="fd-text">系统案例库</span>
+            </div>
+            <div class="fd-tabs">
+                <span ><aty-icon type="ios-chatbubble-outline" class="fd-icon1"></aty-icon>分析页</span>
+                <span ><aty-icon type="edit" class="fd-icon1"></aty-icon>表单页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>列表页</span>
+                <span><aty-icon type="ios-paper-outline" class="fd-icon1"></aty-icon>详情页</span>
+                <span><aty-icon type="checkmark-round" class="fd-icon1"></aty-icon>结果页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>异常页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>个人页</span>
+            </div>
+            <div class="fd-notic">
+                <span class="fd-span"><aty-icon size="26" type="android-home"></aty-icon></span>
+                <span><aty-icon size="26" type="android-notifications-none"></aty-icon></span>
+            </div>
         </div>
     </div>
     <!-- 头：页签等 结束-->
@@ -21,9 +37,15 @@
         <!--包含面包屑，搜索框 开始-->
         <div class="fd-bar">
             <div class="fd-nav">
-                <div class="fd-nav-text"></div>
-                <div class="fd-title"></div>
-                <div class="fd-search"></div>
+                <div class="fd-nav-text">
+                    <aty-breadcrumb :data="breadcrumbdata"></aty-breadcrumb>
+                </div>
+                <div class="fd-title">
+                    <h1>基础表单</h1>
+                </div>
+                <div class="fd-search">
+                    <h3>表单页用于向用户收集或验证信息，基础表单常见于数据项较少的表单场景</h3>
+                </div>
             </div>
         </div>
         <!--包含面包屑，搜索框 结束-->
@@ -31,34 +53,43 @@
         <div class="fd-content">
             <div class="fd-details">
                 <div class="fd-content1">
-                    <div class="fd-content-table">
-                        <aty-row class="fd-content-row">
-                            <aty-col class="fd-content-col">
-                                <aty-input label="案件编号" placeholder="20199001"></aty-input>
-                                <aty-input label="行政执法主体名称" placeholder="西宁市药监局"></aty-input>
-                                <aty-select label="案件程序类型" placeholder="一般程序"></aty-select>
-                                <aty-textarea  label="文本域默认" placeholder="125415"></aty-textarea>
-                                <aty-input label="检查案件编号" placeholder="西宁市药监局"></aty-input>
-                                <div class="fd-content-div">
-                                    <span class="fd-content-date">期间日期</span>
-                                    <aty-date-picker :value="new Date()"
-                                                     format="yyyy年MM月dd日" type="date" placeholder="选择日期" ></aty-date-picker>
-                                    至
-                                    <aty-date-picker :value="new Date()"
-                                                     format="yyyy年MM月dd日" type="date" placeholder="选择日期" ></aty-date-picker>
-                                </div>
-                                <aty-textarea label="文本域默认" placeholder="125415"></aty-textarea>
-                                <aty-radio-group :label-width="110" label="重大案件">
-                                    <aty-radio radio-label="是"></aty-radio>
-                                    <aty-radio radio-label="否"></aty-radio>
-                                </aty-radio-group>
-                                <aty-form-item>
-                                    <aty-button class="fd-form-button" type="primary" text="提交"></aty-button>
-                                    <aty-button class="fd-form-button" text="保存"></aty-button>
-                                </aty-form-item>
-                                </aty-form>
-                            </aty-col>
-                        </aty-row>
+                    <div class="fd-main-form">
+                        <div class="fd-content-table">
+                            <aty-row class="fd-content-row">
+                                <aty-col class="fd-content-col">
+                                    <aty-input label="案件编号" placeholder="20199001"></aty-input>
+                                    <aty-input label="行政执法主体名称" placeholder="西宁市药监局"></aty-input>
+                                    <aty-select label="案件程序类型" placeholder="一般程序"></aty-select>
+                                    <aty-textarea  label="文本域默认" placeholder="125415"></aty-textarea>
+                                    <aty-input label="检查案件编号" placeholder="西宁市药监局"></aty-input>
+                                    <!-- 期间日期开始-->
+                                    <!-- 此处用aty-row也可-->
+                                    <!--                                <aty-row class="fd-row">-->
+                                    <aty-form-item>
+                                        <aty-col span="3" class="fd-date3">期间日期</aty-col>
+                                        <aty-col span="9">
+                                            <aty-date-picker :value="new Date()" format="yyyy年MM月dd日" type="date" placeholder="选择日期"></aty-date-picker>
+                                        </aty-col>
+                                        <aty-col span="1">至</aty-col>
+                                        <aty-col span="9" class="fd-date9">
+                                            <aty-date-picker :value="new Date()" format="yyyy年MM月dd日" type="date" placeholder="选择日期"></aty-date-picker>
+                                        </aty-col>
+                                    </aty-form-item>
+                                    <!--                                </aty-row>-->
+                                    <!--期间日期结束-->
+                                    <aty-textarea label="文本域默认" placeholder="125415"></aty-textarea>
+                                    <aty-radio-group :label-width="110" label="重大案件">
+                                        <aty-radio radio-label="是"></aty-radio>
+                                        <aty-radio radio-label="否"></aty-radio>
+                                    </aty-radio-group>
+                                    <aty-form-item class="fd-form-button">
+                                        <aty-button type="primary" text="提交"></aty-button>
+                                        <aty-button text="保存"></aty-button>
+                                    </aty-form-item>
+                                    </aty-form>
+                                </aty-col>
+                            </aty-row>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,7 +99,10 @@
     <!-- 主要内容 结束-->
     <!-- 底部 开始   -->
     <div class="fd-bottom">
-        <div class="fd-ps"></div>
+        <div class="fd-ps">
+            <h2>成研UED</h2>
+            <span>2019 华宇信息成都研发中心用户体验部出品</span>
+        </div>
     </div>
     <!-- 底部 结束   -->
 </div>

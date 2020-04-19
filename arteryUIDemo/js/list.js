@@ -93,6 +93,16 @@ new Vue({
                 dz: '皇庭国际',
                 zt: '成功'
             }
-        ]
+        ],
+        breadcrumbdata: [{
+            name: "工作台",
+            href: "https://www.baidu.com/"
+        }, {
+            name: "列表页",
+            href: "https://www.baidu.com/"
+        }, {
+            name: "标准表格",
+            href: "https://www.baidu.com/"
+        }]
     }
 });

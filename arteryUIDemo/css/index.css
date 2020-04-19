@@ -20,13 +20,13 @@
     top: 0;
     width: 100%;
     height: 50px;
-    background: red;
+    background: black;
 }
 .fd-header {
     position: absolute;
     width: 100%;
     height: 50px;
-    background: blue;
+    /*background: blue;*/
 }
 .fd-tab {
     position: absolute;
@@ -37,8 +37,61 @@
     bottom: 0;
     width: 80%;
     /*height: 65px;*/
-    background: pink;
+    /*background: pink;*/
 }
+/*头*/
+.fd-logo {
+    display: inline-block;
+    width: 22%;
+    height: 100%;
+    /*background: #00cc66;*/
+}
+.fd-logo-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../img/logo.png")no-repeat;
+    background-size: 50px 50px;
+}
+.fd-text{
+    display: inline-block;
+    line-height: 50px;
+    font-family: "微软雅黑";
+    font-size: 27px;
+    color: white;
+}
+.fd-tabs {
+    display: inline-block;
+    width: 68%;
+    height: 100%;
+    /*background: #0aabff;*/
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+}
+.fd-tabs > span {
+    margin-right: 7px;
+}
+.fd-notic {
+    display: inline-block;
+    line-height: 64px;
+    width: 9%;
+    height: 100%;
+    color: white;
+    /*background: #00cc66;*/
+}
+.fd-span {
+    margin-right: 20px;
+}
+.fd-search-button {
+    display: inline-block;
+    text-align: center;
+}
+.aty-form-item {
+    margin-bottom: 6px;
+}
+
+
 
 
 /*主要内容*/
@@ -46,14 +99,14 @@
     position: relative;
     width: 100%;
     height: 90%;
-    background: aqua;
+    /*background: aqua;*/
 }
 /*面包屑相关div*/
 .fd-bar {
     position: relative;
     width: 100%;
     height: 143px;
-    background: yellow;
+    /*background: yellow;*/
 }
 .fd-nav {
     position: absolute;
@@ -63,29 +116,30 @@
     right: 0;
     bottom: 0;
     width: 80%;
-    background: peru;
+    /*background: peru;*/
 }
 .fd-nav-text {
     width: 100%;
     height: 25px;
-    background: blueviolet;
+    /*background: blueviolet;*/
 }
 .fd-title {
+    line-height: 40px;
     width: 100%;
     height: 40px;
-    background: black;
+    /*background: black;*/
 }
 .fd-search {
     width: 100%;
     height: 77px;
-    background: brown;
+    /*background: brown;*/
 }
 
 
 .fd-content {
     width: 100%;
     height: 83.5%;
-    background: green;
+    /*background: green;*/
 }
 .fd-details {
     position: relative;
@@ -96,13 +150,13 @@
     bottom: 0;
     width: 80%;
     /*height: 50px;*/
-    background: palegoldenrod;
+    background: #F0F2F5;
 }
 .fd-content1 {
     margin-top: 20px;
     width: 100%;
     height: 95%;
-    background: aquamarine;
+    /*background: aquamarine;*/
 }
 /*.fd-table {*/
 /*    margin-top: 20px;*/
@@ -115,18 +169,20 @@
 .fd-bottom {
     width: 100%;
     height: 100%;
-    background: blue;
+    /*background: blue;*/
 }
 .fd-ps {
-    position: relative;
+    /*position: relative;*/
     margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
     width: 80%;
-    /*height: 50px;*/
-    background: yellowgreen;
+    height: 100%;
+    text-align: center;
+    color: #a8b1b6;
+    background: #F0F2F5;
 }
 
 

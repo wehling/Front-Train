@@ -12,8 +12,24 @@
 <div class="fd-main" id="list">
     <!-- 头：页签等 开始-->
     <div class="fd-top">
-        <div class="fd-header">
-            <div class="fd-tab">33</div>
+        <div class="fd-tab">
+            <div class="fd-logo">
+                <span class="fd-logo-img"></span>
+                <span class="fd-text">系统案例库</span>
+            </div>
+            <div class="fd-tabs">
+                <span ><aty-icon type="ios-chatbubble-outline" class="fd-icon1"></aty-icon>分析页</span>
+                <span ><aty-icon type="edit" class="fd-icon1"></aty-icon>表单页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>列表页</span>
+                <span><aty-icon type="ios-paper-outline" class="fd-icon1"></aty-icon>详情页</span>
+                <span><aty-icon type="checkmark-round" class="fd-icon1"></aty-icon>结果页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>异常页</span>
+                <span><aty-icon type="clipboard" class="fd-icon1"></aty-icon>个人页</span>
+            </div>
+            <div class="fd-notic">
+                <span class="fd-span"><aty-icon size="26" type="android-home"></aty-icon></span>
+                <span><aty-icon size="26" type="android-notifications-none"></aty-icon></span>
+            </div>
         </div>
     </div>
     <!-- 头：页签等 结束-->
@@ -23,9 +39,40 @@
         <div class="fd-bar">
             <div class="fd-nav">
                 <div class="fd-nav-text">
+                    <aty-breadcrumb :data="breadcrumbdata"></aty-breadcrumb>
                 </div>
-                <div class="fd-title"></div>
-                <div class="fd-search"></div>
+                <div class="fd-title">
+                    <h2>标准表格</h2>
+                </div>
+                <div class="fd-search">
+                    <aty-row>
+                        <aty-col span="6">
+                            <aty-input :label-width=75 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input  :label-width=110 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input :label-width=110 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input :label-width=110 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input  :label-width=75 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input :label-width=110 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6">
+                            <aty-input :label-width=110 label="输入框名称" placeholder="默认文字"></aty-input>
+                        </aty-col>
+                        <aty-col span="6" class="fd-search-button">
+                            <aty-button icon="android-search" type="primary" text="查询"></aty-button>
+                            <aty-button icon="android-refresh" text="重置" ></aty-button>
+                        </aty-col>
+                    </aty-row>
+                </div>
             </div>
         </div>
         <!--包含面包屑，搜索框 结束-->
@@ -40,9 +87,9 @@
                             <aty-button icon="android-add-circle" type="primary" class="fd-list-button" text="悬浮" ></aty-button>
                             <aty-button icon="android-add-circle" disabled class="fd-list-button" text="无效">
                             </aty-button>
-<!--                            <aty-input class="input">-->
-<!--                                <aty-icon slot="append" type="ios-search"></aty-icon>-->
-<!--                            </aty-input>-->
+                            <aty-input class="fd-search-input">
+                                <aty-icon slot="append" type="ios-search"></aty-icon>
+                            </aty-input>
                         </div>
                         <div class="fd-table">
                             <aty-table :pageable-data="rs1" empty-text="未查询到数据">
@@ -64,8 +111,6 @@
                             <aty-pagination class="fd-page" :total="10" show-total show-elevator></aty-pagination>
 
                         </div>
-                        <!--                        <div class="fd-page">-->
-<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -75,7 +120,10 @@
     <!-- 主要内容 结束-->
     <!-- 底部 开始   -->
     <div class="fd-bottom">
-        <div class="fd-ps"></div>
+        <div class="fd-ps">
+            <h2>成研UED</h2>
+            <span>2019 华宇信息成都研发中心用户体验部出品</span>
+        </div>
     </div>
     <!-- 底部 结束   -->
 </div>

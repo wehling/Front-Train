@@ -1,6 +1,46 @@
-.fd-content-table {
-    margin: 0 auto;
-    width: 40%;
+/*搜索部分*/
+.fd-bar {
+    height: 100px;
+}
+.fd-details {
     height: 100%;
-    background: #ff5e00;
+}
+.fd-content1 {
+    height: 96%;
+}
+.fd-main-form {
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    background: #FFF;
+}
+
+.fd-content-table {
+margin: 0 auto;
+width: 40%;
+height: 100%;
+/*background: #ff5e00;*/
+}
+.aty-form-item-label {
+    width: 130px;
+    font-size: 14px;
+}
+.aty-col-span-9 {
+    width: 35.5%;
+}
+.fd-row {
+    position: relative;
+    top: -7px;
+    font-size: 14px;
+}
+.fd-date3 {
+    margin-left: 61px;
+}
+.fd-date9 {
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+.fd-form-button {
+    text-align: center;
 }
