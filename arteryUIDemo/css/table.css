@@ -15,18 +15,32 @@
     background: #FFF;
 }
 
+/*主要内容部分*/
+.fd-content {
+    height: 87.5%;
+}
 .fd-content-table {
-margin: 0 auto;
-width: 40%;
-height: 100%;
-/*background: #ff5e00;*/
+    margin: 0 auto;
+    width: 55%;
+    height: 100%;
+    /*background: #ff5e00;*/
 }
 .aty-form-item-label {
     width: 130px;
     font-size: 14px;
 }
+.aty-form-item {
+    margin-bottom: 25px;
+}
+
+.fd-radio .aty-form-item-label{
+    width: 136px !important;
+}
+.aty-col-span-3 {
+    width: 13.5%;
+}
 .aty-col-span-9 {
-    width: 35.5%;
+    width: 34.5%;
 }
 .fd-row {
     position: relative;
@@ -43,4 +57,11 @@ height: 100%;
 }
 .fd-form-button {
     text-align: center;
+}
+.fd-button-left {
+    margin-right: 25px;
+}
+.aty-btn {
+    width: 77px;
+    border-radius: 0px;
 }
