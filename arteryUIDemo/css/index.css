@@ -42,7 +42,7 @@
 /*头*/
 .fd-logo {
     display: inline-block;
-    width: 22%;
+    width: 25%;
     height: 100%;
     /*background: #00cc66;*/
 }
@@ -62,7 +62,7 @@
 }
 .fd-tabs {
     display: inline-block;
-    width: 68%;
+    width: 65%;
     height: 100%;
     /*background: #0aabff;*/
     line-height: 50px;
@@ -139,7 +139,7 @@
 .fd-content {
     width: 100%;
     height: 83.5%;
-    /*background: green;*/
+    background: #F0F2F5;
 }
 .fd-details {
     position: relative;
@@ -150,13 +150,19 @@
     bottom: 0;
     width: 80%;
     /*height: 50px;*/
+    background: #FFF;
+}
+.fd-content0 {
+    width: 100%;
+    height: 20px;
     background: #F0F2F5;
 }
 .fd-content1 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 100%;
     height: 95%;
-    /*background: aquamarine;*/
+    /* background: aquamarine; */
+    padding: 10px;
 }
 /*.fd-table {*/
 /*    margin-top: 20px;*/
@@ -169,7 +175,7 @@
 .fd-bottom {
     width: 100%;
     height: 100%;
-    /*background: blue;*/
+    background: #F0F2F5;
 }
 .fd-ps {
     /*position: relative;*/
@@ -182,7 +188,7 @@
     height: 100%;
     text-align: center;
     color: #a8b1b6;
-    background: #F0F2F5;
+    /*background: #F0F2F5;*/
 }
 
 
