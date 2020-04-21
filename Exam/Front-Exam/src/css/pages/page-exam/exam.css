@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fd-main {
+  position: relative;
+  padding-top: 55px;
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+/*头部*/
+.fd-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background: blue;
+}
+.fd-logo {
+  /*position: absolute;*/
+  /*margin: auto;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*width: 80%;*/
+  /*background: yellow;*/
+}
+
+/*内容*/
+.fd-bottom {
+  position: relative;
+  /*padding-left: 200px;*/
+  width: 100%;
+  height: 100%;
+  background: aqua;
+}
+.fd-content {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  background: yellow;
+}
+/*内容1*/
+.fd-content1 {
+  width: 100%;
+  height: 20%;
+  background: #57a3f3;
+}
+/*内容-左*/
+.fd-content1-left {
+  width: 60%;
+  height: 100%;
+  background: #ff9900;
+  float: left;
+}
+.fd-content1-left-top {
+  width: 100%;
+  height: 10%;
+  background: yellow;
+}
+.fd-content1-left-bottom {
+  width: 100%;
+  height: 90%;
+  background: cornflowerblue;
+}
+.fd-img1 {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  background: #00cc66;
+}
+.fd-img2 {
+  display: inline-block;
+  width: 33%;
+  height: 100%;
+  background: #ff9900;
+}
+.fd-img3 {
+  display: inline-block;
+  width: 32%;
+  height: 100%;
+  background: #fff;
+}
+/*内容-右*/
+.fd-content1-right {
+  width: 40%;
+  height: 100%;
+  background: #00cc66;
+  float: left;
+}
+.fd-content1-right-top {
+  width: 100%;
+  height: 10%;
+  background: yellow;
+}
+.fd-content1-right-bottom {
+  width: 100%;
+  height: 90%;
+  background: cornflowerblue;
+}
+/*内容2*/
+.fd-content2 {
+  width: 100%;
+  height: 30%;
+  background: #49d864;
+}
+.fd-content2-title {
+  width: 100%;
+  height: 10%;
+  background: brown;
+}
+.fd-content2-echars {
+  width: 100%;
+  height: 90%;
+  background: blueviolet;
+  float: left;
+}
+.fd-content2-echars-left {
+  width: 33%;
+  height: 100%;
+  background: #ff9900;
+  float: left;
+}
+.fd-content2-echars-mid {
+  width: 33%;
+  height: 100%;
+  background: pink;
+  float: left;
+}
+.fd-content2-echars-right {
+  width: 34%;
+  height: 100%;
+  background: papayawhip;
+  float: left;
+}
+/*内容3*/
+.fd-content3 {
+  width: 100%;
+  height: 50%;
+  background: peru;
+}
+.fd-content3-search {
+  width: 100%;
+  height: 20%;
+  background: yellow;
+}
+.fd-content3-list {
+  width: 100%;
+  height: 80%;
+  background: yellowgreen;
+}
