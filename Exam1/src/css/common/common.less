@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/**
+ * @name          common
+ * @description   common   style
+ * @author        yangfeng
+ * @createTime    2020-02-11
+ * @UpdateTime    2020-02-11
+ * @description   一些公用的样式，写好注释
+ */
+// 小图标，如下拉，日期等都需要
+@formIcon: {
+    width: 16px;
+    height: 16px;
+}
+// 小图标是伪元素
+.icon-pseudo (@img;@position:0 4px) {
+    display: inline-block;
+    content: "";
+    @formIcon();
+
+    background-repeat: no-repeat;
+    background-position: @position;
+    background-image: url(@img);
+}
+// 小图标高亮
+.icon-active (@position:0 -10px) {
+    background-position: 0 -10px;
+}
+// borderRadius
+.border-radius (@radius:2px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+// 带边框的小图标一般用span，灰色边框，2个像素的圆角
+
+.border-icon (@img;@position:center 8px) {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: solid 1px @border-color;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: @position;
+    background-image: url(@img);
+    .border-radius();
+}
+
+.border-icon-hover (@position:center -19px) {
+    background-position: @position;
+    background-color: @info-color;
+    border-color: @info-color;
+}
+
+// 小三角形，指向某个位置
+@triangle: {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 4px;
+    left: 50%;
+    margin-left: -4px;
+    border-bottom: 1px solid @info-color;
+    border-left: 1px solid @info-color;
+    background: #fff;
+    z-index: 5;
+    transform: rotate(135deg);
+}
+
+// 省略号，显示点点点
+@ellipsis: {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

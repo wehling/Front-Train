@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Exam</title>
+    <link rel="stylesheet" href="artery-ui.css" type="text/css" />
     <link rel="stylesheet" href="text.css" type="text/css"/>
 </head>
 <body>
@@ -11,23 +12,83 @@
         <div class="fd-logo"></div>
     </div>
     <div class="fd-bottom">
+
         <div class="fd-content">
+            <div class="fd-tg"></div>
             <div class="fd-content1">
                 <div class="fd-content1-left">
-                    <div class="fd-content1-left-top">业务办理</div>
+                    <div class="fd-content1-left-top">
+                        <div class="fd-title-img">
+                            <span class="fd-ywbl">业务办理</span>
+                        </div>
+                    </div>
                     <div class="fd-content1-left-bottom">
-                        <span class="fd-img1"></span>
-                        <span class="fd-img2"></span>
-                        <span class="fd-img3"></span>
+                        <span class="fd-img1">
+                            <div class="fd-img1-list">
+                                <span class="fd-item-img"></span>
+                                <div class="fd-list-item">
+                                    <span class="fd-item-icon"></span>
+                                    <div class="fd-img1-title">
+                                        <h3>释放管理</h3>
+                                    </div>
+                                    <div class="fd-img1-con">
+                                        <ul>
+                                            <li>预释放（1）</li>
+                                            <li>待提请（1） </li>
+                                            <li>已提请（1） </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="fd-img2">
+                            <div class="fd-img1-list">
+                                <div class="fd-list-item1">
+                                    <div class="fd-img1-title">
+                                        <h3>离间确认</h3>
+                                    </div>
+                                    <div class="fd-img2-con"></div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="fd-img3">
+                            <div class="fd-img1-list">
+                                <div class="fd-list-item1">
+                                    <div class="fd-img2-title">
+                                        <h3>释放登记</h3>
+                                    </div>
+                                    <div class="fd-img3-con"></div>
+                                </div>
+                            </div>
+                        </span>
                     </div>
                 </div>
                 <div class="fd-content1-right">
-                    <div class="fd-content1-right-top"></div>
-                    <div class="fd-content1-right-bottom"></div>
+                    <div class="fd-content1-right-top">
+                        <div class="fd-title-img">
+                            <span class="fd-xxtx">消息提醒</span>
+                        </div>
+
+                    </div>
+                    <div class="fd-content1-right-bottom">
+                        <div class="fd-img4-con">
+                            <ul>
+                                <li>【释放管理】一监区一分监区李四(1234545112)待处理 &nbsp;&nbsp;&nbsp;&nbsp;<span>2020-04-12</span></li>
+                                <li>【释放管理】一监区一分监区李四(1234545112)待处理 &nbsp;&nbsp;&nbsp;&nbsp;<span>2020-04-12</span></li>
+                                <li>【释放管理】一监区一分监区李四(1234545112)待处理 &nbsp;&nbsp;&nbsp;&nbsp;<span>2020-04-12</span></li>
+                                <li>【释放管理】一监区一分监区李四(1234545112)待处理 &nbsp;&nbsp;&nbsp;&nbsp;<span>2020-04-12</span></li>
+                                <li>【释放管理】一监区一分监区李四(1234545112)待处理 &nbsp;&nbsp;&nbsp;&nbsp;<span>2020-04-12</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="fd-content2">
-                <div class="fd-content2-title">数据统计</div>
+                <div class="fd-content2-title">
+                    <div class="fd-title-img">
+                        <span class="fd-sjtj">数据统计</span>
+                    </div>
+                </div>
                 <div class="fd-content2-echars">
                     <div id="js-bar" class="fd-content2-echars-left"></div>
                     <div id="js-line" class="fd-content2-echars-mid"></div>
@@ -35,20 +96,49 @@
                 </div>
             </div>
             <div class="fd-content3" id="list">
-                <div class="fd-content3-search">
-
-                </div>
+<!--                <div class="fd-content3-search">-->
+<!--&lt;!&ndash;                    <aty-input :label-width=75 label="输入框名称" placeholder="默认文字"></aty-input>&ndash;&gt;-->
+<!--                </div>-->
                 <div class="fd-content3-list">
-                    <aty-table :pageable-data="rs1">
-                        <aty-table-column type="selection" reserve-selection label="序号"></aty-table-column>
-                        <aty-table-column prop="bt" label="标题"></aty-table-column>
-                        <aty-table-column prop="ly" label="来源"></aty-table-column>
-                        <aty-table-column prop="rq" label="日期"></aty-table-column>
-                        <aty-table-column prop="jg" label="价格"></aty-table-column>
-                        <aty-table-column prop="ys" label="加载用时"></aty-table-column>
-                        <aty-table-column prop="dz" label="地址"></aty-table-column>
-                    </aty-table>
-                    <aty-pagination class="fd-page" :total="10" show-total show-elevator></aty-pagination>
+                    <div class="fd-table">
+                            <aty-row class='fd-flex'>
+                                <aty-col span='8'>
+                                    <aty-input label="罪犯姓名/编号：" :label-width="150" placeholder="请输入"></aty-input>
+                                </aty-col>
+                                <aty-col span='8'>
+                                    <aty-date-picker  label="入监教育考核截至日期：" :label-width="150" placeholder="选择日期"></aty-date-picker>
+                                </aty-col>
+                                <aty-col class="fd-form-btn" span='8'>
+                                    <aty-button type="primary" text='查询'></aty-button>
+                                    <aty-button type="ghost" text='重置'></aty-button>
+                                </aty-col>
+                                <aty-col class="fd-btn-green" span='8'>
+                                    <aty-button>填写入监教育通过日期</aty-button>
+                                    <aty-button>加入分流名单</aty-button>
+                                </aty-col>
+                            </aty-row>
+                            <aty-row>
+                                <aty-table :pageable-data="rs1">
+                                    <aty-table-column type="selection" reserve-selection width="40"></aty-table-column>
+                                    <aty-table-column type="index" :index="index" label="序号" width="50"></aty-table-column>
+                                    <aty-table-column prop="zfxm" label="罪犯姓名" width="120"></aty-table-column>
+                                    <aty-table-column prop="zfbh" label="罪犯编号" width="150"></aty-table-column>
+                                    <aty-table-column prop="qklf" label="前科累犯" width="120"></aty-table-column>
+                                    <aty-table-column prop="bcqk" label="病残情况" width="150"></aty-table-column>
+                                    <aty-table-column prop="bqwhcd" label="捕前文化程度" width="150"></aty-table-column>
+                                    <aty-table-column prop="tc" label="特长" width="120"></aty-table-column>
+                                    <aty-table-column prop="xqzr" label="刑期止日" width="150"></aty-table-column>
+                                    <aty-table-column prop="rjrq" label="入监日期" width="120"></aty-table-column>
+                                    <aty-table-column prop="rjjykhjzrq" label="入监教育考核截止日期" width="170"></aty-table-column>
+                                </aty-table>
+                            </aty-row>
+
+                            <aty-pagination class="fd-page" :total="10" show-total show-elevator></aty-pagination>
+
+                    </div>
+<!--                    <div class="fd-page">-->
+<!--                        <aty-pagination class="fd-page" :total="10" show-total show-elevator></aty-pagination>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

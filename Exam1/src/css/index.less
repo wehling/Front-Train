@@ -1,0 +1,68 @@
+/**
+*@file index
+*@version 1.0.1
+*@author wuwg
+*@createTime 2019/10/17 - 21:20
+*@updateTime 2019/10/17 - 21:20
+*@description index 的描述
+*/
+// 所有配置的css
+@import "./config/index.less";
+// 所有配置的css
+@import "./mixins/index.less";
+// 系统公用的css统一入口
+@import "./common/index.less";
+// 所有动画的css入口
+@import "./animation/index.less";
+// 组件的css统一入口
+@import "./components/index.less";
+// 页面的css统一入口
+@import "./pages/index.less";
+
+#app {
+    position: relative;
+    padding-left: 300px;
+    min-height: 100%;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+
+    .fd-left {
+        position: absolute;
+        width: 300px;
+        border-right: solid 1px @border-color;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .fd-nav {
+        margin-top: 20px;
+        border-top: solid 1px @border-color;
+        font: 16px/40px "Microsoft YaHei";
+
+        li {
+            border-bottom: solid 1px @border-color;
+            cursor: pointer;
+
+            &.active,
+            &:hover {
+                background: @primary-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .fd-right {
+        padding: 24px;
+        background-color: whitesmoke;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

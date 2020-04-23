@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
-    overflow: hidden;
+    overflow: unset;
 }
 
 .fd-main {
@@ -11,7 +11,7 @@
     padding-top: 55px;
     width: 100%;
     height: 100%;
-    background: red;
+    background: url("icon/bg.png");
 }
 /*头部*/
 .fd-top {
@@ -20,7 +20,7 @@
     top: 0;
     width: 100%;
     height: 55px;
-    background: blue;
+    background: url("icon/icon-logo.png") no-repeat;
 }
 .fd-logo {
     /*position: absolute;*/
@@ -39,124 +39,254 @@
     /*padding-left: 200px;*/
     width: 100%;
     height: 100%;
-    background: aqua;
+    /*background: url("icon/top-bg.png") no-repeat;*/
+}
+.fd-tg {
+    width: 100%;
+    height: 34px;
+    background:url("icon/top-bg.png") no-repeat;
+    background-size: 100%;
 }
 .fd-content {
-    position: absolute;
+    /*position: absolute;*/
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 80%;
-    background: yellow;
+    border-radius: 5px;
+    background: url("icon/top-bg.png") no-repeat;
+    background-size: 100%;
+
 }
 /*内容1*/
 .fd-content1 {
     width: 100%;
     height: 20%;
-    background: #57a3f3;
+    background: #FFF;
 }
 /*内容-左*/
 .fd-content1-left {
-    width: 60%;
+    width: 59%;
     height: 100%;
-    background: #ff9900;
+    /*background: #ff9900;*/
     float: left;
+    border-right: 1px solid;
 }
 .fd-content1-left-top {
     width: 100%;
     height: 10%;
-    background: yellow;
+    /*background: yellow;*/
+}
+.fd-ywbl {
+    padding-left: 20px;
+    background: url("icon/icon-ywbl.png")no-repeat;
+}
+.fd-xxtx {
+    padding-left: 20px;
+    background: url("icon/icon-xxtx.png")no-repeat;
+}
+.fd-sjtj {
+    padding-left: 20px;
+    background: url("icon/icon-sjtj.png")no-repeat;
+}
+.fd-title-img {
+    margin-left: 10px;
 }
 .fd-content1-left-bottom {
     width: 100%;
     height: 90%;
-    background: cornflowerblue;
+    /*background: cornflowerblue;*/
+}
+.fd-item-img {
+    position: relative;
+    display: inline-block;
+    top: -137px;
+    left: -6px;
+    width: 30px;
+    height: 30px;
+    background: url("icon/icon-sfgl.png") no-repeat;
 }
 .fd-img1 {
     display: inline-block;
     width: 33%;
     height: 100%;
-    background: #00cc66;
+    /*background: #00cc66;*/
 }
 .fd-img2 {
     display: inline-block;
     width: 33%;
     height: 100%;
-    background: #ff9900;
+    /*background: #ff9900;*/
 }
 .fd-img3 {
     display: inline-block;
     width: 32%;
     height: 100%;
-    background: #fff;
+    /*background: #fff;*/
 }
 /*内容-右*/
 .fd-content1-right {
     width: 40%;
     height: 100%;
-    background: #00cc66;
+    /*background: #00cc66;*/
     float: left;
 }
 .fd-content1-right-top {
     width: 100%;
     height: 10%;
-    background: yellow;
+    /*background: yellow;*/
 }
 .fd-content1-right-bottom {
     width: 100%;
     height: 90%;
-    background: cornflowerblue;
+    /*background: gray;*/
 }
+.fd-img1-list {
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 200px;
+    height: 150px;
+    /*background: gray;*/
+}
+.fd-list-item {
+    display: inline-block;
+    position: relative;
+    top: -48px;
+    width: 60%;
+    height: 100%;
+    /*background: red;*/
+}
+.fd-btn-green.aty-col.aty-col-span-8 {
+    position: relative;
+    top: 5px;
+    left: -933px;
+}
+.fd-list-item1 {
+    display: inline-block;
+    margin-left: 60px;
+    width: 60%;
+    height: 100%;
+    /*background: red;*/
+}
+.fd-img1-title {
+    width: 100%;
+    height: 20%;
+    color: #277AFF;
+    /*background: blue;*/
+}
+.fd-img2-title {
+    width: 100%;
+    height: 20%;
+    color: #ffaf44;
+    /*background: blue;*/
+}
+.fd-img1-con {
+    width: 100%;
+    height: 80%;
+    /*background: beige;*/
+}
+.fd-img1-con li {
+    height: 37px;
+    border-bottom: 1px dashed;
+}
+.fd-img2-con {
+    display: inline-block;
+    margin-left: 13px;
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    background: url("icon/icon-ljqr.png")no-repeat;
+}
+.fd-img3-con {
+    display: inline-block;
+    margin-left: 13px;
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    background: url("icon/icon-sfdj.png")no-repeat;
+}
+
+.fd-img4-con li {
+    height: 34px;
+    border-bottom: 1px dashed;
+}
+
 /*内容2*/
 .fd-content2 {
     width: 100%;
     height: 30%;
-    background: #49d864;
+    /*background: #49d864;*/
 }
 .fd-content2-title {
+    margin-top: 15px;
     width: 100%;
     height: 10%;
-    background: brown;
+    background: #FFF;
 }
 .fd-content2-echars {
     width: 100%;
     height: 90%;
-    background: blueviolet;
+    background: #FFFFFF;
     float: left;
 }
 .fd-content2-echars-left {
     width: 33%;
     height: 100%;
-    background: #ff9900;
+    /*background: #ff9900;*/
     float: left;
 }
 .fd-content2-echars-mid {
     width: 33%;
     height: 100%;
-    background: pink;
+    /*background: pink;*/
     float: left;
 }
 .fd-content2-echars-right {
     width: 34%;
     height: 100%;
-    background: papayawhip;
+    /*background: papayawhip;*/
     float: left;
 }
 /*内容3*/
 .fd-content3 {
     width: 100%;
     height: 50%;
-    background: peru;
+    background: #FFF;
 }
-.fd-content3-search {
-    width: 100%;
-    height: 20%;
-    background: yellow;
-}
+/*.fd-content3-search {*/
+/*    margin-top: 15px;*/
+/*    width: 100%;*/
+/*    height: 14%;*/
+    /*background: yellow;*/
+/*}*/
 .fd-content3-list {
+    margin-top: 15px;
     width: 100%;
-    height: 80%;
-    background: yellowgreen;
+    height: 100%;
+    /*background: yellowgreen;*/
+}
+.fd-flex {
+    margin-bottom: 10px;
+}
+.fd-table {
+    /*display: table-cell;*/
+    /*text-align: center;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 93%;
+    /*background: red;*/
+}
+.fd-page {
+    text-align: right;
+    padding-right: 30px;
+    width: 100%;
+    height: 61px;
+    line-height: 61px;
+    /*background: yellow;*/
+}
+.fd-form-btn.aty-col.aty-col-span-8 {
+    display: inline-block;
+    text-align: center;
 }

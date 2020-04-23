@@ -1,0 +1,102 @@
+// Prefix
+@css-prefix: fd-;
+// Color
+@primary-color: #4473f3;
+@content-color: #e6edff;
+
+@info-color: #2e5ee2;
+@success-color: #20d88f;
+@warning-color: #ffa74e;
+@error-color: #ff3939;
+@disabled-color: #c2c2c2;
+@recovery-color: #1fdddd;
+// a链接
+@link-color: #2e5ee2;
+//tint() 它将颜色与白色混合，同时减少颜色的比例。
+@link-hover-color: tint(@link-color, 20%);
+// shade() 它将颜色与黑色混合，因为您减少了颜色的比例。
+@link-active-color: shade(@link-color, 5%);
+
+// Base
+@base-background: #FAFAFA;
+@grey-background: #fafafa;
+@font-family: "Microsoft YaHei", "微软雅黑";
+@code-family: Arial;
+
+@title-color: #212121;
+@deap-color: #2a3550;
+@text-color: #4c4c4c;
+// 辅助颜色
+@assist-color: #707070;
+// 失效文字颜色
+@invalid-color: #a3a3a3;
+
+@font-size-huge: 18px;
+@font-size-large: 16px;
+@font-size-base: 14px;
+@font-size-small: 12px;
+
+// 紧凑
+@line-height-tight: 1.3;
+// 常规
+@line-height-base: 1.5;
+// 宽松
+@line-height-easy: 1.7;
+@font-weight-bold: "bold";
+// 它将数字向下取整为下一个最小整数
+@border-radius-base: 5px;
+@border-radius-small: 3px;
+
+// Border page-color
+@border-color: #e0e0e0; // outside
+@split-color: #f0f0f0; // inside
+// Background page-color
+// Shadow
+@shadow-color: rgba(0, 0, 0, 0.2);
+@shadow-base: 0 3px 6px fadeout(@info-color, 88%);
+@shadow-up: 0 -1px 6px @shadow-color;
+@shadow-down: 0 1px 6px @shadow-color;
+@shadow-left: -1px 0 6px @shadow-color;
+@shadow-right: 1px 0 6px @shadow-color;
+
+// Input
+@input-height-base: 32px;
+@input-height-large: 36px;
+@input-height-small: 24px;
+
+@input-placeholder-color: #f3f3f3;
+@input-color: @text-color;
+@input-border-color: @border-color;
+@input-bg: #fff;
+
+@input-hover-border-color: @primary-color;
+@input-focus-border-color: @primary-color;
+@input-disabled-bg: #f3f3f3;
+
+// Z-index
+// page-content(页面内容) < 10
+@zindex-back-top: 70;
+// 固定
+@zindex-affix: 70;
+// 模态框  80-90
+@zindex-modal: 80;
+// 消息 98
+@zindex-message: 98;
+// 加载 98
+@zindex-spin: 98;
+// 下拉框
+@zindex-select: 99;
+
+// Animation
+@animation-time: 0.3s;
+@transition-time: 0.2s;
+
+//圆角
+@radius-small: 2px;
+@radius-normal: 4px;
+@radius-large: 6px;
+
+//阴影
+@shadow-small: 0 0 6px rgba(0, 0, 0, 0.1);
+@shadow-normal: 0 0 10px rgba(0, 0, 0, 0.1);
+@shadow-large: 0 0 16px rgba(0, 0, 0, 0.1);

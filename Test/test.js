@@ -1,100 +1,6 @@
 new Vue({
     el: '#list',
-    data: {
-        rs1: [
-            {
-                bh: '1',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '1'
-            },{
-                bh: '2',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '2'
-            },{
-                bh: '3',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '3'
-            },{
-                bh: '4',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '4'
-            },{
-                bh: '5',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '5'
-            },{
-                bh: '6',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '6'
-            },{
-                bh: '7',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '1'
-            },{
-                bh: '8',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '2'
-            },{
-                bh: '9',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '3'
-            },{
-                bh: '10',
-                bt: '标题最多十个字显示了',
-                ly: '西部省份团队',
-                rq: '2019-04-21',
-                jg: 77,
-                ys: '44min',
-                dz: '皇庭国际',
-                zt: '4'
-            }
-        ]
-    }
+    data: {}
 });
 
 
@@ -103,7 +9,7 @@ new Vue({
 var lineChart = echarts.init(document.getElementById('js-line'));
 var lineOption = {
     title: {
-        text: "半年内释放人数",
+        text: "半年后刑满释放趋势预测",
         left: "center"
     },
     // legend: {
@@ -127,20 +33,20 @@ var lineOption = {
         type: 'line',
         data: [68, 34, 51, 70, 71, 55],
         barWidth: 15,
-        color: ["#F0B9C1"],
-        areaStyle: {
-            normal: {
-                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                    offset: 0,
-                    color: '#F0B9C1'
-                },
-                    {
-                        offset: 1,
-                        color: '#FFF'
-                    }
-                ], false)
-            }
-        },
+        color: ["#eff031"],
+        // areaStyle: {
+        //     normal: {
+        //         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+        //             offset: 0,
+        //             color: '#eff031'
+        //         },
+        //             {
+        //                 offset: 1,
+        //                 color: '#FFF'
+        //             }
+        //         ], false)
+        //     }
+        // },
     }]
 };
 lineChart.setOption(lineOption);
@@ -150,7 +56,7 @@ lineChart.setOption(lineOption);
 var barChart = echarts.init(document.getElementById('js-bar'));
 var barOption = {
     title: {
-        text: "半年后刑满释放趋势预测",
+        text: "半年内释放人数",
         left: "center"
     },
     // legend: {
@@ -225,6 +131,6 @@ var pie1Option = {
             }
         }
     }],
-    color: ["#3194E7", "#FEC269","#00cc66","#ff9900"]
+    color: ["#7EE7E2","#3194E7","#FEC269","#00cc66","#ff9900","#8478FF"]
 };
 pie1Chart.setOption(pie1Option);
